@@ -1,0 +1,138 @@
+.list {
+  border-bottom: 0.0625rem solid #e2e2e2;
+  margin-top: 1.25rem;
+}
+
+.listTitle {
+  color: #000000;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem 0 1.875rem 0;
+
+  @media (min-width: 740px) {
+    flex-direction: row;
+  }
+}
+
+.book {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  @media (min-width: 740px) {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    border-right: 0.0625rem solid #e2e2e2;
+    margin-top: 0;
+    width: 20%;
+  }
+}
+
+.bookImage {
+  display: none;
+
+  @media (min-width: 740px) {
+    height: 6.875rem;
+    max-width: 5.125rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    height: 10.625rem;
+    max-width: 8.25rem;
+  }
+}
+
+.bookInfoContainer {
+  @media (min-width: 740px) {
+    margin-top: 1.25rem;
+  }
+}
+
+.weeksOnList {
+  font-weight: 400;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  letter-spacing: 0.025em;
+  font-size: 0.6875rem;
+  line-height: 1.1875rem;
+  display: none;
+
+  @media (min-width: 740px) {
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 0.6875rem;
+    line-height: 1.0625rem;
+  }
+}
+
+.bookTitle {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1.1875rem;
+  letter-spacing: initial;
+
+  @media (min-width: 740px) {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    letter-spacing: initial;
+  }
+
+  @media (min-width: 1024px) {
+    line-height: 1.1875rem;
+    letter-spacing: 0.025em;
+  }
+}
+
+.bookAuthor {
+  color: #000;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+  margin-bottom: 0px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0.3125rem;
+  }
+}
+
+.bookDescription {
+  color: #333;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 4px;
+  margin-bottom: 7px;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
